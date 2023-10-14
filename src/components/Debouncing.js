@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+// #Execute handler after a specified time only after user has stopped firing that event.
 const Debouncing = () => {
     const [search, setSearch] = useState("");
     let timer;

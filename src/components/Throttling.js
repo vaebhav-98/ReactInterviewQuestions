@@ -1,5 +1,5 @@
 import React from 'react'
-
+// #Execute handler after a specified time.
 const Throttling = () => {
     let count = 0;
     let apicalled;
@@ -19,7 +19,6 @@ const Throttling = () => {
 
   return (
     <div style={{marginTop: "200px"}}>Throttling
-
         <div>
             <button onClick={sendEmail}>sendEmail</button>
         </div>
