@@ -4,10 +4,12 @@ import Home from './pages/Home';
 import DebounceThrottle from './pages/DebounceThrottle';
 import Optimization from './pages/optimization';
 import Table from './pages/Table';
+import { ThemeProvider } from './theme-context';
 function App() {
 
   return (
-    <div className="App">
+    <ThemeProvider>
+      <div className="App">
       <Router>
         <Routes>
           <Route exact path={'/'} element={<Home/>}/>
@@ -17,6 +19,7 @@ function App() {
         </Routes>
       </Router>
     </div>
+    </ThemeProvider>
   );
 }
 
