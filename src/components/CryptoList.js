@@ -1,8 +1,8 @@
 import React from "react";
 
-// Memoized Child Component
+
 const CryptoList = React.memo(({ coins }) => {
-    console.log("CryptoList re-rendered"); // Only logs when necessary
+    console.log("CryptoList re-rendered"); 
     return (
         <ul className="divide-y divide-gray-200">
             {coins.map((coin) => (

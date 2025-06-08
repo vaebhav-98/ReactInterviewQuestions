@@ -1,6 +1,6 @@
 import React from "react";
 
-// Memoized Sort Button
+
 const SortButton = React.memo(({ onToggleSort }) => {
   console.log("SortButton re-rendered");
   return (<button

@@ -1,6 +1,6 @@
 import React from "react";
 
-// Memoized Search Input
+
 const SearchInput = React.memo(({ onFilterChange }) => {
     console.log("SearchInput re-rendered");
     return <input
