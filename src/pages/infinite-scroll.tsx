@@ -37,6 +37,7 @@ export default function infinitescroll() {
 
       {loading && <p className="text-center mt-4">Loading...</p>}
 
+      {/* Invisible div that triggers loadMore when in view */}
       <div ref={triggerRef} className="h-10"></div>
     </div>
   );

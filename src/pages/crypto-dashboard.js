@@ -9,20 +9,24 @@ const index = () => {
     const [filter, setFilter] = useState("");
     const [sortByPrice, setSortByPrice] = useState(false);
 
+    // Fetch cryptocurrency data
     useEffect(() => {
         fetch("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd")
             .then((res) => res.json())
             .then((data) => setCoins(data));
     }, []);
 
+    // Memoized function to avoid re-renders of SearchInput
     const handleFilterChange = useCallback((e) => {
         setFilter(e.target.value);
     }, []);
 
+    // Memoized function to avoid re-renders of SortButton
     const toggleSortByPrice = useCallback(() => {
         setSortByPrice((prev) => !prev);
     }, []);
 
+    // Memoized filtered & sorted coins
     const filteredCoins = useMemo(() => {
         console.log("Filtering and sorting coins...");
         let result = coins.filter((coin) =>

@@ -36,3 +36,34 @@ export default function ProgressBar({ value = 0, onComplete = () => { } }) {
         </div>
     );
 }
+
+
+
+
+{/* <div style={{ width: '100%', backgroundColor: '#eee', height: '30px', borderRadius: '4px', position: 'relative' }}>
+      <div
+        style={{
+          width: `${percent}%`,
+          backgroundColor: 'green',
+          height: '100%',
+          borderRadius: '4px',
+          transition: 'width 0.1s linear',
+        }}
+      ></div>
+      <span
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          height: '100%',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          fontWeight: 'bold',
+          color: percent >= 50 ? 'white' : 'black',
+        }}
+      >
+        {percent.toFixed(0)}%
+      </span>
+    </div> */}
